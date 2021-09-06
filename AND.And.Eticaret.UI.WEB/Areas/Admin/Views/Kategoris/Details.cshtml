@@ -1,0 +1,74 @@
+﻿@model AND.And.Eticaret.Core.Model.Entity.Kategori
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Kategori</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AltÜtsKategoriID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AltÜtsKategoriID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KategoriAdı)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KategoriAdı)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Aktif)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Aktif)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OlusturmaTarih)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OlusturmaTarih)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OlusturKullaniciID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OlusturKullaniciID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GüncellemeTarih)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GüncellemeTarih)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KullaniciGüncelleID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KullaniciGüncelleID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

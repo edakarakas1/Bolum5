@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Admin";
+    var Kullanici = Session["AdminKullaniciGiris"] as AND.And.Eticaret.Core.Model.Entity.Kullanici;
+}
+
+<h2>Sayın @Kullanici.KullaniciAdı @Kullanici.KullaniciSoyadı Admine Hoşgeldiniz</h2>
+
+<ul>
+    <li>
+        <a href="/Admin/Kullanicis">Kullanıcı Yönetimi</a>
+    </li>
+    <li>
+        <a href="/Admin/Ürün">Ürün Yönetimi</a>
+    </li>
+    <li>
+        <a href="/Admin/Kategoris">Kategori Yönetimi</a>
+    </li>
+</ul>

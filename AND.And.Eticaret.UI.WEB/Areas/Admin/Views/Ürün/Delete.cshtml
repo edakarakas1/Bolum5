@@ -1,0 +1,160 @@
+﻿@model AND.And.Eticaret.Core.Model.Entity.Ürün
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Ürün</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ÜrünKoduID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ÜrünKoduID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ÜrünAdı)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ÜrünAdı)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ÜrünTedarikci)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ÜrünTedarikci)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ÜrünKategoriID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ÜrünKategoriID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Model)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Model)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ResimUrl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ResimUrl)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Aciklama)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Aciklama)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlısFiyat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlısFiyat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SatısFiyat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SatısFiyat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KDV)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KDV)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.İndirim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.İndirim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Stok)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Stok)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Aktif)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Aktif)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OlusturmaTarih)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OlusturmaTarih)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OlusturKullaniciID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OlusturKullaniciID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GüncellemeTarih)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GüncellemeTarih)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KullaniciGüncelleID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KullaniciGüncelleID)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

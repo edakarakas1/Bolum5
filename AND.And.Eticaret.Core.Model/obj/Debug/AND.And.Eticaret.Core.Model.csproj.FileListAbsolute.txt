@@ -1,0 +1,11 @@
+C:\Users\edaka\source\repos\AND.And.Eticaret\AND.And.Eticaret.Core.Model\bin\Debug\AND.And.Eticaret.Core.Model.dll.config
+C:\Users\edaka\source\repos\AND.And.Eticaret\AND.And.Eticaret.Core.Model\bin\Debug\AND.And.Eticaret.Core.Model.dll
+C:\Users\edaka\source\repos\AND.And.Eticaret\AND.And.Eticaret.Core.Model\bin\Debug\AND.And.Eticaret.Core.Model.pdb
+C:\Users\edaka\source\repos\AND.And.Eticaret\AND.And.Eticaret.Core.Model\bin\Debug\EntityFramework.dll
+C:\Users\edaka\source\repos\AND.And.Eticaret\AND.And.Eticaret.Core.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\edaka\source\repos\AND.And.Eticaret\AND.And.Eticaret.Core.Model\bin\Debug\EntityFramework.xml
+C:\Users\edaka\source\repos\AND.And.Eticaret\AND.And.Eticaret.Core.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\edaka\source\repos\AND.And.Eticaret\AND.And.Eticaret.Core.Model\obj\Debug\AND.And.Eticaret.Core.Model.csprojAssemblyReference.cache
+C:\Users\edaka\source\repos\AND.And.Eticaret\AND.And.Eticaret.Core.Model\obj\Debug\AND.And.Eticaret.Core.Model.csproj.CopyComplete
+C:\Users\edaka\source\repos\AND.And.Eticaret\AND.And.Eticaret.Core.Model\obj\Debug\AND.And.Eticaret.Core.Model.dll
+C:\Users\edaka\source\repos\AND.And.Eticaret\AND.And.Eticaret.Core.Model\obj\Debug\AND.And.Eticaret.Core.Model.pdb

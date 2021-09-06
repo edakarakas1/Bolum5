@@ -1,0 +1,85 @@
+﻿@model AND.And.Eticaret.Core.Model.Entity.Kategori
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Kategori</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.AltÜtsKategoriID, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.AltÜtsKategoriID, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.AltÜtsKategoriID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.KategoriAdı, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.KategoriAdı, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.KategoriAdı, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Aktif, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <div class="checkbox">
+                    @Html.EditorFor(model => model.Aktif)
+                    @Html.ValidationMessageFor(model => model.Aktif, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.OlusturmaTarih, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.OlusturmaTarih, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.OlusturmaTarih, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.OlusturKullaniciID, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.OlusturKullaniciID, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.OlusturKullaniciID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.GüncellemeTarih, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.GüncellemeTarih, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.GüncellemeTarih, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.KullaniciGüncelleID, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.KullaniciGüncelleID, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.KullaniciGüncelleID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

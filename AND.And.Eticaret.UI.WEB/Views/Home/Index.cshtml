@@ -1,0 +1,43 @@
+﻿@model List<AND.And.Eticaret.Core.Model.Entity.Ürün>
+@{
+    ViewBag.Title = "Index";
+}
+
+    <h2>Sayfamıza Hoşgeldiniz</h2>
+<br />
+
+@{ 
+    foreach (var item in Model)
+    {
+    <div class="ÜrünKutusu">
+        <p class="title">@item.ÜrünAdı</p>
+        <img src="@item.ResimUrl" />
+        <p>
+            @item.Aciklama
+        </p>
+        <a href="#" class="btn btn-success">İncele</a>
+        <a href="#" class="btn btn-default"><i class="fas fa-shopping-basket"></i>Sepete Ekle</a>
+    </div>
+    }
+}
+<div class="row"></div>
+<style>
+    .ÜrünKutusu {
+        width: 200px;
+        float: left;
+        margin: 10px;
+        border: outset  #b9b9b9;
+        padding: 10px;
+        @{ //çerçeve şekli değişebilir dashed olabilir
+    }
+    }
+    .ÜrünKutusu img{
+        width: 176px;
+    }
+    .ÜrünKutusu.title{
+        font-weight: bold;
+
+    }
+</style>
+
+

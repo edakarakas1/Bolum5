@@ -1,0 +1,129 @@
+﻿@model IEnumerable<AND.And.Eticaret.Core.Model.Entity.Ürün>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ÜrünKoduID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ÜrünAdı)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ÜrünTedarikci)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ÜrünKategoriID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Model)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ResimUrl)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Aciklama)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AlısFiyat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SatısFiyat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KDV)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.İndirim)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Stok)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Aktif)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OlusturmaTarih)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OlusturKullaniciID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GüncellemeTarih)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KullaniciGüncelleID)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ÜrünKoduID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ÜrünAdı)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ÜrünTedarikci)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ÜrünKategoriID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Model)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ResimUrl)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Aciklama)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AlısFiyat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SatısFiyat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KDV)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.İndirim)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Stok)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Aktif)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OlusturmaTarih)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OlusturKullaniciID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GüncellemeTarih)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KullaniciGüncelleID)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,69 @@
+﻿@model IEnumerable<AND.And.Eticaret.Core.Model.Entity.Kategori>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AltÜtsKategoriID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KategoriAdı)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Aktif)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OlusturmaTarih)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OlusturKullaniciID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GüncellemeTarih)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KullaniciGüncelleID)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AltÜtsKategoriID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KategoriAdı)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Aktif)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OlusturmaTarih)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OlusturKullaniciID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GüncellemeTarih)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KullaniciGüncelleID)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

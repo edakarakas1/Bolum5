@@ -1,0 +1,111 @@
+﻿@model IEnumerable<AND.And.Eticaret.Core.Model.Entity.Kullanici>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.KullaniciAdı)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KullaniciSoyadı)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Telefon)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BankaAdı)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IBANNumarası)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KullanıcıAdı)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Şifre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Aktif)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Admin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OlusturmaTarih)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OlusturKullaniciID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GüncellemeTarih)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KullaniciGüncelleID)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.KullaniciAdı)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KullaniciSoyadı)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Telefon)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BankaAdı)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IBANNumarası)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KullanıcıAdı)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Şifre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Aktif)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Admin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OlusturmaTarih)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OlusturKullaniciID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GüncellemeTarih)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KullaniciGüncelleID)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

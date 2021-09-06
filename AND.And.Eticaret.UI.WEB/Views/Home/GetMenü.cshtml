@@ -1,0 +1,8 @@
+﻿@model IEnumerable<AND.And.Eticaret.Core.Model.Entity.Kategori>
+
+@{ 
+    foreach (var item in Model)
+    {
+<li class="item"><a class="list-group-item-heading" href="#">@item.KategoriAdı</a></li>
+    }
+}
